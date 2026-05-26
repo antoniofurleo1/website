@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ink: #271811;
+  --cream: #F3EAD3;
+  --peach: #D6AC97;
+  --brand: #A82218;
+  --hairline: #d0ccc0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--cream);
+}
+
+body {
+  background: var(--cream);
+  color: var(--ink);
+  font-family: var(--font-sans), Inter, system-ui, sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: var(--brand);
+  color: var(--cream);
+}
+
+/* Headlines feel tighter and more elegant */
+h1, h2, h3 {
+  text-wrap: pretty;
+}
+
+/* The defining red rule mark, reused everywhere */
+.red-rule {
+  display: inline-block;
+  width: 32px;
+  height: 1.5px;
+  background: var(--brand);
+}
+.red-rule--sm { width: 24px; }
+.red-rule--lg { width: 56px; }
+
+/* Hairline divider used between mini-sections */
+.hairline {
+  height: 1px;
+  background: var(--hairline);
+  width: 100%;
+}
+.hairline--dark {
+  background: #3a2a22;
+}
+
+/* Faint paper grain on cream sections (very subtle, no jpg needed) */
+.paper {
+  background-color: var(--cream);
+  background-image:
+    radial-gradient(rgba(39,24,17,0.025) 1px, transparent 1px),
+    radial-gradient(rgba(39,24,17,0.018) 1px, transparent 1px);
+  background-size: 22px 22px, 11px 11px;
+  background-position: 0 0, 6px 6px;
+}
+
+/* Subtle ink-section accent: vertical hairlines */
+.ink-stripes {
+  background-color: var(--ink);
+  background-image:
+    linear-gradient(rgba(214,172,151,0.04) 1px, transparent 1px);
+  background-size: 100% 56px;
+}
+
+/* Focus ring everywhere — keyboard accessibility */
+:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Marquee animation for the running-strip element */
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.marquee-track {
+  animation: marquee 40s linear infinite;
+}
+
+/* Slight grain on the ink hero for warmth (very subtle, CSS-only) */
+.grain-ink {
+  position: relative;
+}
+.grain-ink::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    radial-gradient(rgba(243,234,211,0.04) 1px, transparent 1px);
+  background-size: 3px 3px;
+  mix-blend-mode: screen;
+  opacity: 0.5;
+}
