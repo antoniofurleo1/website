@@ -97,20 +97,27 @@ export const site = {
       featured: true,
     },
     {
-      id: 'robotics',
-      title: 'Robotics Club',
-      kicker: 'Founder & Technical Lead · Monopoli, IT · 2021 – 2025',
-      blurb: 'Founded and led a robotics club of 50+ students and teachers across 4 AI/robotics projects. Programmed Pepper and NAO humanoid robots and integrated LLM capabilities into NAO for educational use cases.',
+      id: 'monopolihouse',
+      title: 'Monopoli House',
+      kicker: 'Website developer · Fasano, IT · 2021 — current',
+      blurb: 'Designed and built monopolihouse.com for an Airbnb rental in Puglia. Bookings, gallery, and contact in a clean, mobile-first layout.',
       highlights: [
-        'Won 1st place in a Ministry of Education competition — €10,000 prize for the school',
-        'Filed a patent application',
+        'Owned design, build, and ongoing maintenance',
+        'Mobile-first, fast, accessible',
       ],
+      link: { label: 'monopolihouse.com', href: 'https://monopolihouse.com' },
       featured: true,
     },
   ] as Project[],
 
   // -- innovation portfolio (smaller compact cards) ------------------------
   portfolio: [
+    {
+      id: 'robotics',
+      title: 'Robotics Club',
+      kicker: 'Founder & Technical Lead · Monopoli, IT',
+      blurb: 'Founded and led a robotics club of 50+ students and teachers across 4 AI/robotics projects. Programmed Pepper and NAO humanoid robots; integrated LLM capabilities into NAO. Won 1st place in a Ministry of Education competition (€10,000 prize). Filed a patent application.',
+    },
     {
       id: 'greenroad',
       title: 'GreenRoad',
@@ -147,13 +154,6 @@ export const site = {
       kicker: 'Creator · 1.5M+ total views',
       blurb: 'My personal TikTok, grown organically past 1.5 million total views. A live experiment in building an audience and shipping content under my own name.',
       link: { label: '@antoniofurleo', href: 'https://www.tiktok.com/@antoniofurleo' },
-    },
-    {
-      id: 'monopolihouse',
-      title: 'Monopoli House',
-      kicker: 'Website developer · Fasano, IT',
-      blurb: 'Designed and built monopolihouse.com to support an Airbnb rental in Puglia. Bookings, gallery, and contact in a clean, mobile-first layout.',
-      link: { label: 'monopolihouse.com', href: 'https://monopolihouse.com' },
     },
   ] as Project[],
 
