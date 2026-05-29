@@ -76,7 +76,7 @@ function PressCard({ item, large = false }: { item: PressItem; large?: boolean }
         </p>
         <span className="inline-flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-wider2 text-brand group-hover:text-ink transition-colors">
           Read
-          <span aria-hidden>↗</span>
+          <span aria-hidden>{'↗︎'}</span>
         </span>
       </div>
     </a>

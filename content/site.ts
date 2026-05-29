@@ -52,11 +52,11 @@ export const site = {
   about: {
     heading: 'About',
     body: [
-      "I grew up taking things apart in southern Italy. Now I study Computer Science and Economics at Brown, hold a 4.0 GPA, and I'm building Bubl.",
+      "I grew up taking things apart in southern Italy. Now I study Computer Science and Economics at Brown, hold a 3.8 GPA, and I'm building Bubl.",
     ],
     facts: [
       { label: 'Studies', value: 'B.Sc Computer Science · Economics, Brown University' },
-      { label: 'Class', value: '2029 · 4.0 GPA' },
+      { label: 'Class', value: '2029 · 3.8 GPA' },
       { label: 'Roots', value: 'Fasano, Italy → Providence, RI' },
       { label: 'Languages', value: 'Italian (native) · English (fluent)' },
     ],
@@ -148,6 +148,13 @@ export const site = {
       blurb: 'My personal TikTok, grown organically past 1.5 million total views. A live experiment in building an audience and shipping content under my own name.',
       link: { label: '@antoniofurleo', href: 'https://www.tiktok.com/@antoniofurleo' },
     },
+    {
+      id: 'monopolihouse',
+      title: 'Monopoli House',
+      kicker: 'Website developer · Fasano, IT',
+      blurb: 'Designed and built monopolihouse.com to support an Airbnb rental in Puglia. Bookings, gallery, and contact in a clean, mobile-first layout.',
+      link: { label: 'monopolihouse.com', href: 'https://monopolihouse.com' },
+    },
   ] as Project[],
 
   // -- experience ----------------------------------------------------------
@@ -182,15 +189,15 @@ export const site = {
       ],
     },
     {
-      role: 'Rental Operations Intern',
-      org: 'Apulia House',
+      role: 'Rental Operations & Website Developer',
+      org: 'Monopoli House',
       location: 'Fasano, IT',
       period: '2021 — current',
-      blurb: 'Operating an Airbnb rental: bookings, customer service, and the property website.',
+      blurb: 'Operating an Airbnb rental and designing the property website monopolihouse.com.',
       details: [
+        'Built and maintain monopolihouse.com',
         'Managing booking platforms and pricing',
         'Owning customer service and turnover logistics',
-        'Maintaining the property website',
       ],
     },
     {

@@ -64,7 +64,7 @@ export function Work() {
           >
             Earlier — innovation, robotics & social
           </Reveal>
-          <RevealList className="grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-ink/10">
+          <RevealList className="grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-ink/10 sm:[&>*:last-child:nth-child(2n+1)]:col-span-2 lg:[&>*:last-child:nth-child(3n+1)]:col-span-3">
             {site.portfolio.map((p) => (
               <RevealItem key={p.id}>
                 <PortfolioCard project={p} />
@@ -85,7 +85,7 @@ function PortfolioCard({ project: p }: { project: Project }) {
           aria-hidden
           className="absolute top-3 right-3 font-serif text-ink/40 text-[18px] transition-all group-hover:text-brand group-hover:translate-x-0.5 group-hover:translate-y-[-2px]"
         >
-          ↗
+          {'↗︎'}
         </span>
       )}
       <h4 className="font-serif text-[24px] text-ink leading-tight">

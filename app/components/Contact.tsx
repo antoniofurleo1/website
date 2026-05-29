@@ -26,7 +26,7 @@ export function Contact() {
               >
                 <span className="inline-block h-[1.5px] w-6 bg-brand transition-all group-hover:w-10" />
                 Say hello
-                <span className="font-sans text-[20px]">↗</span>
+                <span className="font-sans text-[20px]">{'↗︎'}</span>
               </a>
             </Reveal>
           </div>
@@ -73,7 +73,7 @@ export function Contact() {
                       className="inline-flex items-center gap-2 mr-5 font-sans text-[18px] text-ink hover:text-brand transition-colors"
                     >
                       {l.label}
-                      <span aria-hidden>↗</span>
+                      <span aria-hidden>{'↗︎'}</span>
                     </a>
                   ))}
                 </ContactBlock>

@@ -45,7 +45,7 @@ export function Hero() {
               aria-hidden
               className="font-serif text-[15px] sm:text-[18px] translate-y-[-1px] transition-transform group-hover:translate-x-0.5 group-hover:translate-y-[-2px]"
             >
-              ↗
+              {'↗︎'}
             </span>
           </a>
         ))}
