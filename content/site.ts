@@ -27,7 +27,7 @@ export type Experience = {
 
 export type PressItem = {
   outlet: string;
-  outletStyle?: 'corriere' | 'repubblica' | 'serif' | 'sans';
+  outletStyle?: 'serif' | 'sans';
   date: string;
   href: string;
   featured?: boolean;
@@ -72,12 +72,12 @@ export const site = {
         link: { label: 'askbubl.com', href: 'https://askbubl.com' },
       },
       {
-        label: 'Going',
-        body: 'YC Startup School 2026 in San Francisco, this July.',
+        label: 'Researching',
+        body: 'AI and youth digital safety at the Sociotechnical Systems and Wellbeing Research Lab at Brown, starting this fall.',
       },
       {
-        label: 'Representing',
-        body: 'JA Italia Alumni at the Campionati di Imprenditorialità, June 4 to 5.',
+        label: 'Just back from',
+        body: 'YC Startup School 2026 in San Francisco, where I was invited to the Consulate General of Italy.',
       },
     ],
   },
@@ -160,6 +160,19 @@ export const site = {
   // -- experience ----------------------------------------------------------
   experience: [
     {
+      role: 'Undergraduate Research Assistant — UTRA',
+      org: 'Sociotechnical Systems & Wellbeing Research Lab · Brown University',
+      location: 'Providence, RI',
+      period: 'Fall 2026',
+      blurb:
+        'Research on AI and youth digital safety with Prof. Diana Freed (Computer Science · Data Science Institute), funded by a Brown UTRA award.',
+      details: [
+        'Studying how AI tools — conversational agents, mental-health platforms, resource navigators — support help-seeking among young people',
+        'Mixed-methods work: literature reviews, qualitative and quantitative analysis, interview coding and transcription',
+        'Supporting participant recruitment, IRB documentation, and dissemination of findings',
+      ],
+    },
+    {
       role: 'Social Media & Outreach Chair',
       org: 'Delta Tau · Brown University',
       location: 'Providence, RI',
@@ -226,30 +239,18 @@ export const site = {
     blurb: 'Coverage in Italian press.',
     items: [
       {
-        outlet: 'Corriere della Sera',
-        outletStyle: 'corriere',
-        date: 'Dec 2025',
-        href: 'https://lecce.corriere.it/notizie/cronaca/25_dicembre_15/sparatoria-alla-brown-university-il-racconto-dello-studente-pugliese-era-tutto-tranquillo-poi-e-diventata-una-zona-di-guerra-ho-7fb1157b-9744-4d5e-a7a4-73c6e080dxlk.shtml',
-        featured: true,
-      },
-      {
-        outlet: 'la Repubblica',
-        outletStyle: 'repubblica',
-        date: 'Dec 2025',
-        href: 'https://bari.repubblica.it/cronaca/2025/12/15/news/studente_brown_university_intervista_antonio_furleo_semeraro_sparatoria-425039584/',
-        featured: true,
-      },
-      {
         outlet: 'FasanoLive',
         outletStyle: 'sans',
         date: 'Jun 2025',
         href: 'https://fasanolive.com/2025/06/02/lo-studente-fasanese-antonio-furleo-semeraro-ammesso-alla-prestigiosa-brown-university-negli-stati-uniti/',
+        featured: true,
       },
       {
         outlet: 'Monopoli Times',
         outletStyle: 'serif',
         date: 'Jun 2025',
         href: 'https://www.monopolitimes.com/2025/06/01/antonio-furleo-semeraro-brown-university-ammissione-ivy-league-italia-borsa-studio-usa-fasano-monopoli-brown-storia-successo-studente-universita-americana-puglia-ammissione-universitaria-usa-da-fasano/',
+        featured: true,
       },
     ] as PressItem[],
   },
@@ -260,6 +261,11 @@ export const site = {
     summary:
       'Class rank 1/153 and 100/100 magna cum laudem at Istituti Tecnici Vito Sante Longo. Multiple merit-based Italian government scholarships, including national study-abroad funding to spend a year at Leslie High School, Michigan.',
     awards: [
+      {
+        title: 'Consulate General of Italy in San Francisco',
+        sub: 'Invited during Y Combinator Startup School 2026',
+        body: 'Hosted at the Consulate with a group of young Italian founders admitted to YC Startup School, for a conversation on Italy–US innovation and academic research across the Atlantic.',
+      },
       {
         title: "Medaglia d'argento al valore civile",
         sub: 'Silver Medal for Civil Valor — Italian state honor',
